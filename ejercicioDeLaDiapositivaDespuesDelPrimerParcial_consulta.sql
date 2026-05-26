@@ -1,7 +1,4 @@
 
-
---CREATE DATABASE ejercicio_1;
-
 -- se crean las tablas
 /*
 
@@ -46,6 +43,7 @@ CREATE TABLE cursada(
 */
 
 -- se ingresan datos en las columnas de las tablas
+
 /*
 
 INSERT INTO alumno (matricula, apellido, nombre) 
@@ -68,6 +66,5 @@ VALUES
 
 */
 
-SELECT * FROM cursada;
+--SELECT * FROM cursada;
 
---DROP DATABASE ejercicio_1;
