@@ -71,7 +71,7 @@ VALUES
     (7320, 'lengua', 70),
     (1420, 'fisica', 40);
 
-INSERT INTO cursada (nroId, turno, modalidad, matricula_alumno, codigo_asignatura)
+INSERT INTO cursada (codigo, turno, modalidad, matricula_alumno, codigo_asignatura)
 VALUES 
     (1, 'mañana', 'presencial', 1670, 2540),
     (2, 'tarde', 'virtual', 7320, 7320),
