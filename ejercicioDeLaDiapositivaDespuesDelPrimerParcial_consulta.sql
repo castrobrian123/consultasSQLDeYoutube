@@ -1,4 +1,8 @@
 
+-- CREATE DATABASE laBaseDeDatosLuegoDelPrimerParcial;
+
+-- USE laBaseDeDatosLuegoDelPrimerParcial;
+
 -- se crean las tablas
 /*
 
@@ -16,7 +20,7 @@ CREATE TABLE alumno(
 
     direccion_cp INT NOT NULL,
 
-	email VARCHAR(150) UNIQUE,
+    email VARCHAR(150) UNIQUE,
 
     escuela_proveniente VARCHAR(100) NOT NULL,
 
@@ -29,7 +33,7 @@ CREATE TABLE asignatura(
     codigo INT PRIMARY KEY,
 
     nombreDeMateria VARCHAR(100) NOT NULL,
-    
+
     legajo INT
 
 );
@@ -65,13 +69,13 @@ VALUES
     ( 3540, 'falcon',     'alan',  'Av. Rivadavia', 4567, 1002,     'alan.falcon@gmail.com',    'Colegio Nacional', 'Activo' ),
     ( 7320, 'gonzalez', 'marcos',    'Calle Mitre',  980, 5500, 'marcos.gonzalez@gmail.com',  'Instituto San Jose', 'Activo' );
 
-INSERT INTO asignatura (codigo, nombreDeMateria, legajo) 
+INSERT INTO asignatura ( codigo, nombreDeMateria, legajo ) 
 VALUES 
     (2540, 'matematica', 20),
-    (7320, 'lengua', 70),
-    (1420, 'fisica', 40);
+    (7320, 'lengua',     70),
+    (1420, 'fisica',     40);
 
-INSERT INTO cursada (codigo, turno, modalidad, matricula_alumno, codigo_asignatura)
+INSERT INTO cursada ( codigo, turno, modalidad, matricula_alumno, codigo_asignatura )
 VALUES 
     (1, 'mañana', 'presencial', 1670, 2540),
     (2, 'tarde', 'virtual', 7320, 7320),
@@ -79,5 +83,5 @@ VALUES
 
 */
 
---SELECT * FROM cursada;
+-- SELECT * FROM cursada;
 
